@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippe Bouaziz - Portfolio</title>
+    <!-- Chargement de Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#2563eb',
+                        'secondary-gray': '#e5e7eb',
+                        'dark-gray': '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+        html { font-family: 'Inter', sans-serif; }
+        .star-section {
+            @apply bg-white p-6 rounded-lg shadow-lg mb-6;
+        }
+    </style>
+    <!-- Icônes via Font Awesome pour les technologies et les liens sociaux -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-dark-gray leading-normal tracking-wider">
+
+    <!-- En-tête et navigation -->
+    <header class="bg-primary-blue text-white shadow-xl py-6 sticky top-0 z-50">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <div class="text-xl font-bold mb-4 md:mb-0">Philippe Bouaziz</div>
+            <ul class="flex flex-wrap justify-center space-x-4 md:space-x-8">
+                <li><a href="#profile" class="hover:underline transition-all duration-300">Profil</a></li>
+                <li><a href="#clients" class="hover:underline transition-all duration-300">Projets Clients</a></li>
+                <li><a href="#portfolio" class="hover:underline transition-all duration-300">Projets Portfolio</a></li>
+                <li><a href="#contact" class="hover:underline transition-all duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container mx-auto px-4 py-8 md:py-16">
+
+        <!-- Section Profil et Compétences -->
+        <section id="profile" class="mb-12">
+            <div class="bg-white p-8 rounded-xl shadow-2xl">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-center text-primary-blue mb-4">Data Scientist & Ingénieur IA</h1>
+                <p class="text-lg md:text-xl text-center mb-8 max-w-3xl mx-auto">
+                    Expert en transformation digitale avec plus de 10 ans d’expérience. Spécialisé dans l’optimisation des processus et l’intégration de solutions digitales, notamment avec Python, Spark et SQL sur les clouds Azure, AWS et Oracle. J'applique des méthodes Scrum-Agile pour la gestion de projets complexes, avec une expertise en MLOps, data engineering et industrialisation de modèles.
+                </p>
+
+                <!-- Compétences clés -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+                    <div>
+                        <h2 class="text-2xl font-semibold text-primary-blue mb-4 flex items-center"><i class="fas fa-microchip mr-3"></i>Compétences Clés</h2>
+                        <p class="space-y-2">
+                            <span class="block"><strong>Modélisation prédictive & Data</strong> : Python, Spark, SQL, développement de modèles prédictifs, LLM, Langchains, OpenAzure.</span>
+                            <span class="block"><strong>Cloud</strong> : AWS, Azure, IBM, Oracle.</span>
+                            <span class="block"><strong>Gestion de projet</strong> : Méthodes Agile, Scrum, coordination multi-équipes, Coaching d'équipes Data, gestion de conflits.</span>
+                            <span class="block"><strong>Transformation digitale</strong> : Migration d’ETL, docker, CI-CD, git, Mlflow, intégration d’outils collaboratifs, développement d’architectures digitales.</span>
+                            <span class="block"><strong>Outils collaboratifs & Workspace</strong> : Microsoft 365, Slack, Azure Workspace, Trello, Jira, confluence.</span>
+                            <span class="block"><strong>BI & Analytics</strong> : Data visualization (Power BI, Tableau), architecture design avec PowerDesigner.</span>
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-semibold text-primary-blue mb-4 flex items-center"><i class="fas fa-award mr-3"></i>Certifications</h2>
+                        <p class="space-y-2">
+                            <span class="block">Oracle Infrastructure Foundation Associate</span>
+                            <span class="block">Databricks Data Lakehouse 2025</span>
+                            <span class="block">Oracle GenAI Professional 2025</span>
+                            <span class="block">IBM Cloud 101 | Data & MLOps</span>
+                            <span class="block">OCI AI Associate 2025</span>
+                            <span class="block">OCI Agents for Fusion Application 2025</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets Clients (Approche STAR) -->
+        <section id="clients" class="mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary-blue mb-8">Projets Clients</h2>
+            <div class="space-y-8">
+                <!-- Projet Capgemini -->
+                <div class="star-section">
+                    <h3 class="text-2xl font-semibold text-primary-blue mb-2">Capgemini</h3>
+                    <p class="text-sm text-gray-500 mb-4">Secteur: Technologies, Banque et Assurance</p>
+                    <p class="mb-2"><strong class="font-bold">Situation :</strong> Contexte d'optimisation du traitement des données et des processus de prise de décision.</p>
+                    <p class="mb-2"><strong class="font-bold">Tâche :</strong> Développer des fonctions Python, des tableaux de bord interactifs, et créer des outils de GenAI de type LLM sur Open Azure.</p>
+                    <p class="mb-2"><strong class="font-bold">Action :</strong> Renforcement des pratiques MLOps grâce à la mise en œuvre de pipelines orchestrés, de tests automatisés et de workflows de déploiement de modèles évolutifs.</p>
+                </div>
+
+                <!-- Projet BNP Asset Management -->
+                <div class="star-section">
+                    <h3 class="text-2xl font-semibold text-primary-blue mb-2">BNP Asset Management</h3>
+                    <p class="text-sm text-gray-500 mb-4">Secteur: Banque et Finance</p>
+                    <p class="mb-2"><strong class="font-bold">Situation :</strong> Mission de portage pour une transformation digitale.</p>
+                    <p class="mb-2"><strong class="font-bold">Tâche :</strong> Migrer les systèmes ETL vers des solutions Python/Spark et optimiser les pipelines de données.</p>
+                    <p class="mb-2"><strong class="font-bold">Action :</strong> Mise en place d’environnements de collaboration basés sur des technologies cloud (Azure, Kubernetes).</p>
+                    <p class="mb-2"><strong class="font-bold">Résultat :</strong> Réduction de 30% du temps de traitement des données.</p>
+                </div>
+
+                <!-- Projet SNCF -->
+                <div class="star-section">
+                    <h3 class="text-2xl font-semibold text-primary-blue mb-2">SNCF</h3>
+                    <p class="text-sm text-gray-500 mb-4">Secteur: Automobile et Logistique</p>
+                    <p class="mb-2"><strong class="font-bold">Situation :</strong> Mission de portage nécessitant le développement d'architectures de données et l'implémentation de solutions IA en Python et Spark pour l'optimisation des infrastructures.</p>
+                    <p class="mb-2"><strong class="font-bold">Tâche :</strong> Gérer le projet et coordonner les équipes.</p>
+                    <p class="mb-2"><strong class="font-bold">Action :</strong> Déploiement d’environnements collaboratifs améliorés, facilitant la communication et la gestion des données entre équipes internes.</p>
+                </div>
+
+                <!-- Projet Hôpital Hadassah -->
+                <div class="star-section">
+                    <h3 class="text-2xl font-semibold text-primary-blue mb-2">Hôpital Hadassah</h3>
+                    <p class="text-sm text-gray-500 mb-4">Secteur: Industrie pharmaceutique</p>
+                    <p class="mb-2"><strong class="font-bold">Situation :</strong> Analyse des données patient pour développer des stratégies thérapeutiques innovantes.</p>
+                    <p class="mb-2"><strong class="font-bold">Tâche :</strong> Coordonner les projets data avec les équipes médicales et scientifiques pour implémenter des modèles statistiques.</p>
+                    <p class="mb-2"><strong class="font-bold">Action :</strong> Utilisation d'outils collaboratifs (Tableau) pour simplifier le partage des résultats.</p>
+                </div>
+
+                <!-- Projet ENS (Doctorat) -->
+                <div class="star-section">
+                    <h3 class="text-2xl font-semibold text-primary-blue mb-2">ENS - Doctorat</h3>
+                    <p class="text-sm text-gray-500 mb-4">Secteur: Physique et matériaux médicaux</p>
+                    <p class="mb-2"><strong class="font-bold">Situation :</strong> Contexte de physique et de matériaux médicaux.</p>
+                    <p class="mb-2"><strong class="font-bold">Tâche :</strong> Traiter le signal, analyser des matériaux médicaux et développer des algorithmes optimisés.</p>
+                    <p class="mb-2"><strong class="font-bold">Action :</strong> Développement d’algorithmes pour l’analyse des données biomédicales et le développement de patches cardiaques.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets Portfolio & Fun -->
+        <section id="portfolio" class="mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary-blue mb-8">Projets Portfolio & Fun</h2>
+            <div class="space-y-8">
+                <!-- Projet InsightCRM -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center justify-between mb-2 space-x-4">
+                        <h3 class="text-xl font-bold text-primary-blue">InsightCRM</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://yeonathan.github.io/Portfolio_InsightCRM_2025/" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors duration-300 flex items-center">
+                                <i class="fas fa-play-circle fa-2x mr-1"></i>
+                            </a>
+                            <a href="https://github.com/yeonathan/Portfolio_InsightCRM_2025" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors duration-300 flex items-center">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Application d’analyse de ventes à partir d’un fichier CSV, conçue pour les équipes commerciales. Elle permet de calculer automatiquement le chiffre d'affaires par produit et de générer des graphiques interactifs pour des rapports rapides.
+                    </p>
+                    <p class="text-xs text-gray-500">
+                        Technos: HTML / CSS / JS, traitement de fichiers CSV, graphiques interactifs.
+                    </p>
+                </div>
+                <!-- Projet Beauty_AI -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center justify-between mb-2 space-x-4">
+                        <h3 class="text-xl font-bold text-primary-blue">Beauty_AI</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://yeonathan.github.io/portfolio_Beauty_AI_2025/" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors duration-300 flex items-center">
+                                <i class="fas fa-play-circle fa-2x mr-1"></i>
+                            </a>
+                            <a href="https://github.com/yeonathan/portfolio_Beauty_AI_2025" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors duration-300 flex items-center">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Une application web légère et sans serveur pour personnaliser l’expérience beauté. Elle détecte le teint d’un visage à partir d’une photo pour suggérer une palette de maquillage cohérente. Le projet combine l’extraction de caractéristiques visuelles, une logique de classification simple par type de peau et des recommandations cosmétiques localisées.
+                    </p>
+                    <p class="text-xs text-gray-500">
+                        Technos: HTML / CSS / JS, extraction de caractéristiques visuelles.
+                    </p>
+                </div>
+                <!-- Projet Job_analyzer -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center justify-between mb-2 space-x-4">
+                        <h3 class="text-xl font-bold text-primary-blue">Job_analyzer</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://yeonathan.github.io/portfolio_Job_analyzer_2025/" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors duration-300 flex items-center">
+                                <i class="fas fa-play-circle fa-2x mr-1"></i>
+                            </a>
+                            <a href="https://github.com/yeonathan/portfolio_Job_analyzer_2025" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors duration-300 flex items-center">
+                                <i class="fab fa-github fa-2x mr-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Une application pour extraire les titres, compétences et statistiques depuis des offres d'emploi collées depuis des sites comme LinkedIn ou Indeed.
+                    </p>
+                    <p class="text-xs text-gray-500">
+                        Technos: HTML / CSS / JS, manipulation du DOM, Regex / NLP de base.
+                    </p>
+                </div>
+                <!-- Blogs & Art IA -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-primary-blue mb-4">Blogs & Art IA</h3>
+                    <p class="mb-4">Créateur de "DataScienceMustNeededSkills" avec 88K followers, 101 articles publiés sur Medium et plus de 200 sur Quora.</p>
+                    <p class="mb-2 font-bold">Articles de blog :</p>
+                    <ul class="list-disc list-inside space-y-1 mb-4">
+                        <li>
+                            <a href="https://medium.datadriveninvestor.com/jumpstart-your-ai-journey-with-llms-2912f49b55b4" target="_blank" class="text-blue-500 hover:underline">Apply AI: Unleashing LLMs in your business</a> (Medium)
+                        </li>
+                        <li>
+                            <a href="https://blog.devgenius.io/12-best-spark-coding-questions-you-should-know-for-your-next-data-job-interview-512d6cbd0d02" target="_blank" class="text-blue-500 hover:underline">12 Best Spark Coding Questions for Your Next Data Job Interview</a> (Medium)
+                        </li>
+                        <li>
+                            <a href="https://qr.ae/pCXbcW" target="_blank" class="text-blue-500 hover:underline">Data science must needed skills</a> (Quora)
+                        </li>
+                    </ul>
+                    <p class="mb-2 font-bold">Créations artistiques :</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>
+                            <a href="https://www.youtube.com/@yeonathanbouaziz5592/shorts" target="_blank" class="text-blue-500 hover:underline">Chaîne YouTube AI Shorts</a>
+                        </li>
+                        <li>
+                            <a href="https://artspaces.kunstmatrix.com/fr/exhibition/12377587/rewire-231-pelex" target="_blank" class="text-blue-500 hover:underline">Galerie d'art 3D : REWIRE 231</a>
+                        </li>
+                        <li>
+                            <a href="https://generativeai.pub/rewire-231-the-first-ai-runway-414b91b449eb" target="_blank" class="text-blue-500 hover:underline">Article sur la galerie : REWIRING 231 - The First AI Runway</a>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://medium.com/@philippe-bouaziz" target="_blank" class="text-blue-500 hover:text-blue-700"><i class="fab fa-medium fa-2x"></i></a>
+                        <a href="https://www.quora.com/profile/Philippe-Bouaziz" target="_blank" class="text-blue-500 hover:text-blue-700"><i class="fab fa-quora fa-2x"></i></a>
+                        <a href="https://www.youtube.com/@yeonathanbouaziz5592/shorts" target="_blank" class="text-blue-500 hover:text-blue-700"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+
+                <!-- Outils GenAI GPT -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-primary-blue mb-2 flex items-center">
+                        <i class="fas fa-robot mr-2"></i>Outils GenAI GPT
+                    </h3>
+
+                    <!-- Data CodeSkill Mentor -->
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-primary-blue mb-1">Data CodeSkill Mentor</h4>
+                        <p class="text-sm text-gray-700 mb-2">
+                            Mentor en compétences de données, optimisation de code, et préparation à l'industrialisation.
+                        </p>
+                        <a href="https://chatgpt.com/g/g-dd384o061-data-codeskill-mentor" target="_blank" class="inline-block bg-primary-blue text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                    </div>
+
+                    <!-- GCP Certify Buddy -->
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-primary-blue mb-1">GCP Certify Buddy</h4>
+                        <p class="text-sm text-gray-700 mb-2">
+                            Compagnon d'étude convivial pour les certifications GCP.
+                        </p>
+                        <a href="https://chatgpt.com/g/g-zC96o8Tue-gcp-certify-buddy" target="_blank" class="inline-block bg-primary-blue text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                    </div>
+
+                    <!-- Azure Certify Buddy -->
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-primary-blue mb-1">Azure Certify Buddy</h4>
+                        <p class="text-sm text-gray-700 mb-2">
+                            Un compagnon d'étude pour les examens de certification Azure, fournissant des astuces et des questions pratiques.
+                        </p>
+                        <a href="https://chatgpt.com/g/g-TQGVCIwLF-azure-certify-buddy" target="_blank" class="inline-block bg-primary-blue text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                    </div>
+
+                    <!-- Amazoniens Exam Prep -->
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-primary-blue mb-1">Amazoniens Exam Prep</h4>
+                        <p class="text-sm text-gray-700 mb-2">
+                            Guide AWS concis avec des questions-réponses interactives pour réussir les examens.
+                        </p>
+                        <a href="https://chatgpt.com/g/g-lzm0RzPa9-amazoniens-exam-prep" target="_blank" class="inline-block bg-primary-blue text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                    </div>
+
+                    <!-- Makeup Matcher -->
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-primary-blue mb-1">Makeup Matcher</h4>
+                        <p class="text-sm text-gray-700 mb-2">
+                            Fournit des profils de maquillage, des palettes, des photos et des conseils de partage.
+                        </p>
+                        <a href="https://chatgpt.com/g/g-nWckZta4Q-makeup-matcher" target="_blank" class="inline-block bg-primary-blue text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                    </div>
+
+                    <!-- Lunar Fit -->
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-primary-blue mb-1">Lunar Fit</h4>
+                        <p class="text-sm text-gray-700 mb-2">
+                            Un assistant de remise en forme et de planification de repas adapté aux cycles lunaires féminins.
+                        </p>
+                        <a href="https://chatgpt.com/g/g-GgT6dyf4M-lunar-fit" target="_blank" class="inline-block bg-primary-blue text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                    </div>
+
+                    <!-- Wellness MENtor -->
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-primary-blue mb-1">Wellness MENtor</h4>
+                        <p class="text-sm text-gray-700 mb-2">
+                            Assistant coach professionnel à la voix d'un conseiller médical pour le fitness.
+                        </p>
+                        <a href="https://chatgpt.com/g/g-RH5rClN7i-wellness-mentor" target="_blank" class="inline-block bg-primary-blue text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="mb-12">
+            <div class="bg-primary-blue text-white p-8 rounded-xl shadow-2xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contactez-moi</h2>
+                <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
+                    N'hésitez pas à me contacter pour toute opportunité de collaboration, projet ou simplement pour échanger.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="mailto:philippe_bouaziz@hotmail.com" class="text-white hover:underline"><i class="fas fa-envelope mr-2"></i>philippe_bouaziz@hotmail.com</a>
+                    <a href="tel:+41766250220" class="text-white hover:underline"><i class="fas fa-phone mr-2"></i>+41(0)766250220</a>
+                    <a href="https://linkedin.com/in/philippe-bouaziz-data" target="_blank" class="text-white hover:underline"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 Philippe Bouaziz. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
